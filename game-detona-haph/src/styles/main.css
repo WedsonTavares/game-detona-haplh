@@ -1,0 +1,84 @@
+/* main.css */
+
+/* Estilos padrão para telas maiores */
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url("../images/wall.png");
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90px;
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    border-bottom: 5px solid #ffd700;
+  }
+  
+  .panel {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .square {
+    height: 150px;
+    width: 150px;
+    border: 1px solid #000000;
+    background-color: #1aeaa5;
+  }
+  
+  .enemy {
+    background-image: url("../images/ralph.png");
+    background-size: cover;
+  }
+  
+  .menu-lives {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .menu-time h2:nth-child(2),
+  .menu-score h2:nth-child(2) {
+    margin-top: 1rem;
+    text-align: center; /* Adicione esta propriedade para centralizar o texto */
+  }
+  
+  /* Consulta de mídia para telas menores (por exemplo, dispositivos móveis) */
+  @media only screen and (max-width: 600px) {
+    .menu {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 60px;
+      font-size: 14px;
+      margin-bottom: 60px;
+    }
+  
+    .square {
+      height: 100px; /* Ajuste o tamanho do quadrado para telas menores */
+      width: 100px;
+    }
+  
+    .menu-time h2:nth-child(2),
+    .menu-score h2:nth-child(2) {
+      margin-top: 7px; /* Remova a margem para telas menores */
+      font-size: 13px;
+      text-align: center; /* Adicione esta propriedade para centralizar o texto */
+      line-height: 1.5; /* Ajuste conforme necessário para centralizar verticalmente */
+    }
+  
+    .menu-time,
+    .menu-score,
+    .menu-lives {
+      margin-top: 0;
+      font-size: 7px;
+    }
+  }
+  
